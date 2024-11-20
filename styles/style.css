@@ -65,7 +65,43 @@ a {
 .btn:hover{
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
-/* logo and Navigation Menu */
+
+/* Titles */
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+
+}
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--secondaryTextColor);
+    position:relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: var(--lineColor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+/* Logo and Navigation Menu */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -113,4 +149,68 @@ nav ul li a {
     position: fixed;
     top: 33px;
     right: 35px;
+}
+
+/* Hero Section */
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+.hero-name span {
+    color: var(--primaryTextColor);
+}
+
+.hero-right img {
+    width: 90%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Service Section */
+#services {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+}
+
+.services .pre-title {
+    margin: 0 auto;
+}
+
+.services-tirtle {
+    text-align: center;
+}
+
+.service {
+    padding : 3rem 2rem;
+    text-align: center;
+    background-color: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.service h4 {
+    margin: 1.5rem 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.service-icon {
+    background: var(--thirdBackgroundColor);
+    width: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+} 
+
+service-icon svg {
+    fill: var(--primaryIconColor);
 }
