@@ -147,7 +147,7 @@ nav ul li a {
     height: 2px;
     background-color: #000;
     margin: 7px;
-    transition: all 0.3s;
+    transition: all 0.2s;
     z-index: 99;
 }
 
@@ -362,9 +362,10 @@ nav ul li a {
     margin-bottom: 1.4rem;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
-    padding: .75rem 1.3rem;
+    padding: 0.75rem 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #fff;
     border: 1px solid var(--borderColor);
@@ -398,6 +399,7 @@ nav ul li a {
     background: var(--primaryIconColorHover);
 }
 
+/* Contact Section - Right Side */
 .contact-item {
     display: flex;
     gap: 1.5rem;

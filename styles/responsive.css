@@ -30,7 +30,7 @@
     }
 
     .toggle-burger .line-3 {
-        transform: rotate(45deg) translate(-5px, 7px);
+        transform: rotate(45deg) translate(-5px, -7px);
     }
 
     /* Navigation */
@@ -45,7 +45,7 @@
         border-left: 1px solid var(--borderColor);
         z-index: 9;
         transform: translateX(100%);
-        transition: .3s ease-in-out;
+        transition: .2s ease-in-out;
     }
 
     nav ul {
